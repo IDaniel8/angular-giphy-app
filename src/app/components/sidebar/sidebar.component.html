@@ -1,0 +1,19 @@
+<div style="min-width: 180px"></div>
+<div
+  id="sidebar"
+  class="bg-dark border-right p-3 position-fixed h-100"
+  style="min-width: 180px"
+>
+  <h3 class="text-white">Gifs-App</h3>
+  <hr class="text-white" />
+
+  <div class="list-group list-reset">
+    <a
+      *ngFor="let sideBarItem of sideBarItems"
+      class="list-group-item list-group-item-action"
+      (click)="selectedSideBarItem(sideBarItem)"
+      href="#"
+      >{{ sideBarItem | titlecase }}</a
+    >
+  </div>
+</div>

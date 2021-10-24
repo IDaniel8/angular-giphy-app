@@ -1,0 +1,11 @@
+<div class="d-flex">
+  <components-sidebar
+    [sideBarItems]="searchHistoric"
+    (sideBarItemClick)="onSidebarItemClick($event)"
+  ></components-sidebar>
+  <div class="container">
+    <dashboard-search></dashboard-search>
+    <hr />
+    <dashboard-list></dashboard-list>
+  </div>
+</div>
